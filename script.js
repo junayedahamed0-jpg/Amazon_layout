@@ -7,7 +7,7 @@
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-   // Demo deals data (you can replace with real API later)
+   // Demo deals data ( we can replace with real API later)
     const deals = [
       { title: 'Wireless Headphones', price: 1999, mrp: 3999, img: 'https://images.unsplash.com/photo-1518444028785-8f622e7630f3?q=80&w=1200&auto=format&fit=crop' },
       { title: 'Smart Watch', price: 2499, mrp: 4999, img: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=1200&auto=format&fit=crop' },
