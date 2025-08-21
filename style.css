@@ -1,0 +1,229 @@
+
+    :root {
+      --bg: #0f1111;         /* top header bg (Amazon-ish) */
+      --bg2: #232f3e;        /* sub header bg */
+      --accent: #febd69;     /* search highlight */
+      --text: #f0f2f2;       /* light text */
+      --muted: #c5c7c7;      /* muted text */
+      --link: #007185;       /* link color */
+      --card: #ffffff;       /* card bg */
+      --body: #eaeded;       /* page bg */
+      --danger: #e47911;     /* CTA */
+    }
+
+    /* Reset-ish */
+    /* *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--body); color: #111; line-height: 1.4;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    ul { margin: 0; padding: 0; list-style: none; } */
+
+    /* Header */
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131921;  /* Amazon dark blue */
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.header .img img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* Search Bar */
+.row {
+  display: flex;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.row select, .row input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.row select {
+  background: #e6e6e6;
+  border-radius: 5px 0 0 5px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.row button {
+  background: #febd69; /* Amazon orange */
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+.row section{
+  border-right: 5px;
+  border-left: 5px;
+}
+
+.row button i {
+  font-size: 16px;
+  color: #111;
+}
+
+/* Navigation Links */
+.text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-btn strong {
+  display: block;
+  font-size: 15px;
+  font-weight: ;
+}
+
+/* Cart */
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart svg {
+  color: white;
+}
+
+.cart .count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #f08804;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+.allinput{
+          height: 10px ;
+          width: 300px;
+          background-color: #007185;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    }
+     */
+
+    /* Subheader */
+    .subheader { background: var(--bg2); color: var(--text); font-size: .95rem; }
+    .subheader .row { display: flex; gap: 1rem; align-items: center; padding: .5rem 1rem; overflow-x: auto; }
+    .burger { display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; }
+    .subheader a { white-space: nowrap; opacity: .95; }
+    .subheader a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero { position: relative; background: linear-gradient(180deg, #252f3f 0%, #506680 50%, var(--body) 50%);
+            min-height: 320px; display: grid; align-items: end; }
+    .hero-inner { padding: 1rem; max-width: 1400px; margin: 0 auto; width: 100%; }
+    .hero .msg { background: #f5f6f6; padding: .75rem 1rem; border-radius: 4px; text-align: center; font-size: .95rem; }
+
+    /* Products grid */
+    .grid {
+         max-width: 1400px; 
+         margin: 0 auto;
+         padding: 1rem; 
+         display: grid; 
+         gap: 1rem; 
+         grid-template-columns: repeat(4, 1fr); }
+    .card { 
+        background: var(--card); 
+        border-radius: 8px; 
+        padding: 1rem; 
+        display: grid; 
+        gap: .75rem; 
+        box-shadow: 0 2px 4px rgba(0,0,0,.06); }
+    .card h3 {
+         margin: 0; 
+         font-size: 1.05rem; }
+    .card .thumb { 
+        background: #f7fafa; 
+        border-radius: 6px; 
+        padding: .5rem; 
+        height: 220px; 
+        display: grid; 
+        place-items: center; 
+        overflow: hidden; }
+    .card .thumb img { 
+        object-fit: cover; 
+        width: 100%; height: 100%; border-radius: 6px; }
+    .card a.more { color: var(--link); font-size: .9rem; }
+
+    /* Carousel */
+    .carousel { grid-column: 1 / -1; background: var(--card); border-radius: 8px; padding: 1rem; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,.06); }
+    .carousel h3 { margin: 0 0 .5rem; }
+    .track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(160px, 1fr); gap: .75rem; overflow-x: auto; scroll-snap-type: x mandatory; }
+    .item { scroll-snap-align: start; border: 1px solid #eee; border-radius: 8px; padding: .75rem; display: grid; gap: .5rem; }
+    .price { font-weight: 700; }
+
+    /* Footer */
+    .backtop { margin-top: 2rem; background: #37475a; color: var(--text); text-align: center; padding: .85rem; cursor: pointer; }
+    .footer { background: var(--bg2); color: var(--text); }
+    .footer .cols { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding: 2rem 1rem; }
+    .footer h4 { margin: 0 0 .75rem; }
+    .footer a { display: block; color: var(--muted); margin: .35rem 0; font-size: .95rem; }
+    .footer .legal { border-top: 1px solid #3a4553; text-align: center; padding: 1rem; color: var(--muted); font-size: .9rem; }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .header .row { grid-template-columns: auto 1fr auto auto; }
+      .deliver { display: none; }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
+      .header .row { grid-template-columns: 1fr; gap: .5rem; }
+      .deliver { display: none; }
+      .subheader .row { gap: .75rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  

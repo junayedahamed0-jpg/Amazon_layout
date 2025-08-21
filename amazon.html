@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <!-- HEADER -->
+  <header class="header">
+   
+      <div class="img">
+        <img src="amazonicon.jpg" alt="">
+      </div>
+    <span>ShopClone</span>
+    <div class="row">
+      <div class="select">
+      <select id="cat" aria-label="Select category">
+          <option>All</option>
+          <option>Books</option>
+          <option>Electronics</option>
+          <option>Mobiles</option>
+          <option>Fashion</option>
+          <option>Home & Kitchen</option>
+        </select>
+        </div>
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" placeholder="Search ShopClone" aria-label="Search input" />
+        <button type="submit" aria-label="Search"> 
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    <div class="text">
+      <div class="first">
+      <a class="nav-btn account" href="#">
+        <span>Hello, sign in</span>
+        <br>
+        <strong>Account & Lists</strong>
+      </a>
+      </div>
+       <div class="second">
+      <a class="nav-btn orders" href="#">
+        <span>Returns</span>
+        <br>
+        <strong>& Orders</strong>
+      </a>
+    </div>
+        <div class="third">
+      <a class="nav-btn cart" href="#" aria-label="Cart, 2 items">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M7 6h14l-2 9H8L6 3H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="count" id="cartCount">2</span>
+      </a>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBHEADER -->
+  <nav class="subheader" aria-label="Main navigation">
+    <div class="row">
+      <a href="#" class="burger" id="openMenu" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        All
+      </a>
+      <a href="#">Amazon MiniTV</a>
+      <a href="#">Sell</a>
+      <a href="#">Best Sellers</a>
+      <a href="#">Mobiles</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Electronics</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Home & Kitchen</a>
+      <a href="#">Prime</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Promotional banner">
+    <div class="hero-inner">
+      <div class="msg">You are on <strong>ShopClone.com</strong>. You can also shop on ShopClone India for millions of products with fast local delivery. <a href="#" style="color: var(--link);">Click here to go to ShopClone.in</a>.</div>
+    </div>
+  </section>
+
+  <!-- MAIN GRID -->
+  <main class="grid">
+    <article class="card">
+      <h3>Up to 60% off | Electronics</h3>
+      <div class="thumb"><img alt="Electronics" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop"/></div>
+      <a class="more" href="#">See more</a>
+    </article>
+
+    <article class="card">
+      <h3>Great offers | Home & Kitchen</h3>
+      <div class="thumb"><img alt="Home & Kitchen" src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=1200&auto=format&fit=crop"/></div>
+      <a class="more" href="#">Explore</a>
+    </article>
+
+    <article class="card">
+      <h3>Styles for men | Under ₹999</h3>
+      <div class="thumb"> <img src="amazonicon.jpg" alt=""></div>
+      <a class="more" href="#">Shop now</a>
+    </article>
+
+    <article class="card">
+      <h3>Mobiles & Accessories</h3>
+      <div class="thumb"><img alt="Mobiles" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop"/></div>
+      <a class="more" href="#">See all</a>
+    </article>
+
+    <!-- Deals carousel -->
+    <section class="carousel" aria-label="Today's Deals">
+      <h3>Today's Deals</h3>
+      <div class="track" id="dealTrack">
+        <!-- Items injected by JS for demo -->
+      </div>
+    </section>
+
+    <article class="card">
+      <h3>Beauty & Personal Care</h3>
+      <div class="thumb"><img alt="Beauty" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop"/></div>
+      <a class="more" href="#">Discover</a>
+    </article>
+
+    <article class="card">
+      <h3>Furniture | Up to 50% off</h3>
+      <div class="thumb"><img alt="Furniture" src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=1200&auto=format&fit=crop"/></div>
+      <a class="more" href="#">Shop deals</a>
+    </article>
+
+    <article class="card">
+      <h3>Gaming Zone</h3>
+      <div class="thumb"><img alt="Gaming" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop"/></div>
+      <a class="more" href="#">Browse</a>
+    </article>
+
+    <article class="card">
+      <h3>Books & Audible</h3>
+      <div class="thumb"><img alt="Books" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop"/></div>
+      <a class="more" href="#">Find reads</a>
+    </article>
+  </main>
+
+  <div class="backtop" id="backToTop" role="button" tabindex="0">Back to top</div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="cols">
+      <div>
+        <h4>Get to Know Us</h4>
+        <a href="#">About ShopClone</a>
+        <a href="#">Careers</a>
+        <a href="#">Press Releases</a>
+        <a href="#">ShopClone Science</a>
+      </div>
+      <div>
+        <h4>Connect with Us</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div>
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell on ShopClone</a>
+        <a href="#">Affiliate Program</a>
+        <a href="#">Advertise Your Products</a>
+      </div>
+      <div>
+        <h4>Let Us Help You</h4>
+        <a href="#">Your Account</a>
+        <a href="#">Returns Centre</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> ShopClone. This is a demo UI inspired by Amazon for learning purposes.</div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
